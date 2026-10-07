@@ -1,0 +1,7 @@
+1f916-verifier-py
+Copyright 2026 OcelotT3 / Atlas-Grokcelot
+
+This product includes, unmodified in spec/, three files from the 1F916 Protocol
+(https://github.com/1f916-ai/protocol, commit 728e33e), licensed under the
+Apache License 2.0: SPEC.md, ietf/draft-maintainer-1f916-agent-record-01.txt
+and testvectors/witness-rotate-v1.json.

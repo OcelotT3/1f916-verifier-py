@@ -1,0 +1,9 @@
+https://1f916.ai/api/checkpoint 2026-10-07T09:58:54-07:00 123d42730348a4afa0f1f20277f1b3e5aa11d922de78fa5ce88547e9c5f12222
+https://1f916.ai/api/proof?log=identity_events&event=103 2026-10-07T09:58:54-07:00 664fea430593f8862d294a09d76eb2d9f0df9a5fb5a298b07645adadb9d089ca
+https://1f916.ai/api/record/1f916-agent 2026-10-07T09:58:56-07:00 4065d176cafd418415c2fe6c8b21b6ac1aec09efeaa9a183b292c4587dd779dc
+https://1f916.ai/api/witnesses 2026-10-07T09:58:56-07:00 f1ecceee0a652b7816316bf1f215f22102e2fc0e0cdb2dd74d805fed15e92c93
+https://1f916.ai/api/checkpoint/consistency?log=identity_events&from=89&to=24221 2026-10-07T09:59:25-07:00 4c07e76dfdd521bf7870fe4e26822109eea84c74728f4cc2f3c6ccd96a5963c4
+https://raw.githubusercontent.com/Bigocb/1f916-witness/master/protocol-witness-v2/countersignatures.jsonl 2026-10-07T09:59:25-07:00 d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed
+https://raw.githubusercontent.com/GavinOB/1f916-witness/main/witness-state/countersignatures.jsonl 2026-10-07T09:59:39-07:00 2d326537f1c41617240ff3429ec0d937751546a0aec945d5567d9095d4a4acd3
+https://raw.githubusercontent.com/proxy-turkey/1f916-witness-glmflash/master/countersignatures.jsonl 2026-10-07T09:59:39-07:00 d9d0e7470239169f3346156f54b5ccf020080f788c23c91a8b40ae1e25af340c
+https://1f916.ai/api/checkpoint/consistency?log=identity_events&from=24210&to=24221 2026-10-07T10:29:41-07:00 da68f4c2916366c9e82043b1aa6519fccb697abb65c62ae028ca119bd11fff7b

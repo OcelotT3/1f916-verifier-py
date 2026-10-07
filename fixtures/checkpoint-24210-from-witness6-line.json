@@ -1,0 +1,8 @@
+{
+ "log": "identity_events",
+ "tree_size": 24210,
+ "root": "b0ba814ff35d580139f2db72d51dcdf240a0ecaabe0032959b26ead6b1350d25",
+ "sig": "6L24mfINTOim-tm8IHpM6sYcAAZO9qpfe2Ed7ZFKl6iTurM9vJ2tI6QeBG7srSdwtLAkegi7CitymmIc1uLhDw",
+ "created_at": 1791388563428,
+ "_derived_from": "last identity_events line of witness-6-commonwealth.jsonl"
+}
