@@ -193,11 +193,11 @@ class TestNegative(unittest.TestCase):
         self.assertIn("VERDICT: diverged", out)
     def test_wrong_key(self):
         _, other = keypair()
-        rc, out = run_cli("--inclusion", os.path.join(FX, "proof-identity_events-103.json"), "--registry-key", other)
+        rc, out = run_cli("--inclusion", os.path.join(FX, "proof-identity_events-103.json"), "--registry-key=" + other)
         self.assertIn("VERDICT: diverged", out)
     def test_artifact_key_mismatch_pin(self):
         _, other = keypair()
-        rc, out = run_cli("--checkpoint", os.path.join(FX, "checkpoint.json"), "--registry-key", other)
+        rc, out = run_cli("--checkpoint", os.path.join(FX, "checkpoint.json"), "--registry-key=" + other)
         self.assertIn("does not match pinned key", out); self.assertIn("VERDICT: diverged", out)
     def test_self_signed_forgery_is_unanchored(self):
         sk, pk = keypair(); root = "ab" * 32
@@ -222,8 +222,8 @@ class TestNegative(unittest.TestCase):
             else: line["witness_sig"] = b64u(w_sk.sign(V.witness_payload("https://1f916.ai", "L", 7, line["root"])))
             wl.append(line)
         wf = os.path.join(HERE, "_tmp_w.jsonl"); open(wf, "w").write("\n".join(json.dumps(x) for x in wl) + "\n")
-        args = ["--checkpoint", tmpjson(cp, "c.json"), "--registry-key", reg, "--witness-file", wf]
-        if pin: args += ["--witness-key", w]
+        args = ["--checkpoint", tmpjson(cp, "c.json"), "--registry-key=" + reg, "--witness-file", wf]
+        if pin: args += ["--witness-key=" + w]  # "=" form: random base64url keys can start with "-"
         return run_cli(*args)
     def test_witness_good(self): self.assertIn("VERDICT: witnessed", self._forged(["good"])[1])
     def test_witness_first_observation_not_top(self): self.assertIn("VERDICT: witness-unusable", self._forged(["first"])[1])

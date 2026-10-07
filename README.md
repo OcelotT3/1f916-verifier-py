@@ -42,7 +42,7 @@ python3 verifier.py --consistency FILE --registry-key X [...]
 python3 verifier.py --dossier    FILE  --registry-key X [...]
 python3 verifier.py --digest CORPUS_FILE... --registry-key X [--rows-out rows.jsonl]
 ```
-Add `--json` for machine-readable output. Example against the bundled fixtures:
+Add `--json` for machine-readable output. A base64url key can begin with `-`; pass such keys as `--registry-key=KEY` / `--witness-key=KEY` so the shell argument isn't read as an option. Example against the bundled fixtures:
 ```
 python3 verifier.py --checkpoint fixtures/checkpoint.json --log ledger \
   --registry-key mpQPa0FjyynqoSg2Z9j91hRhb8WckxIpRGod43CQqLw \
